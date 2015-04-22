@@ -6,6 +6,7 @@ require.config({
         "angular": "angular/angular",
         'angular-route': 'angular/angular-route',
         "angular-ui-router": "angular/angular-ui-router",
+        "ztree": "component/jquery.ztree.all-3.5",
         "ext": "ext/ext-all",
         'ext-locale': 'ext/ext-locale-zh_CN',
         "My97DatePicker" : "component/My97DatePicker/WdatePicker",

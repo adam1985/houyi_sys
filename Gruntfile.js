@@ -56,6 +56,8 @@ module.exports = function (grunt) {
                     '<%= yeoman.tmp %>/styles/layout.css' : [
                         '<%= yeoman.app %>/styles/bootstrap.css',
                         '<%= yeoman.app %>/styles/bootstrap-theme.css',
+                        '<%= yeoman.app %>/styles/datepicker.css',
+                        '<%= yeoman.app %>/styles/zTreeStyle.css',
                         '<%= yeoman.app %>/styles/layout.css'
                     ]
                 }
@@ -101,6 +103,8 @@ module.exports = function (grunt) {
                         "bootstrap": "bootstrap/bootstrap",
                         "angular": "angular/angular",
                         'angular-route': 'angular/angular-route',
+                        "angular-ui-router": "angular/angular-ui-router",
+                        "ztree": "component/jquery.ztree.all-3.5",
                         "ext": "ext/ext-all",
                         'ext-locale': 'ext/ext-locale-zh_CN',
                         "My97DatePicker" : "component/My97DatePicker/WdatePicker",
@@ -118,6 +122,7 @@ module.exports = function (grunt) {
                         },
                         "bootstrap": ["jquery"],
                         "angular-route": ["angular"],
+                        "angular-ui-router": ["angular"],
                         'ext-locale':['ext'],
                         "chosen" : ["jquery"],
                         "validform" : ["jquery"],
@@ -149,7 +154,7 @@ module.exports = function (grunt) {
                     dot: true,
                     cwd: '<%= yeoman.app %>',
                     dest: '<%= yeoman.dist %>',
-                    src: []
+                    src: ["fonts/{,*/}*.*"]
                 }]
             },
             html: {
@@ -158,7 +163,7 @@ module.exports = function (grunt) {
                     cwd: '<%= yeoman.app %>',
                     dest: '<%= yeoman.distmp %>',
                     src: [
-                        '*.html'
+                        '{,*/}*.html'
                     ]
                 }]
             },

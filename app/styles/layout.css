@@ -1,4 +1,12 @@
 .houyi-box{ margin-top: 20px;}
 .order-remark{
     width: 100%;
+    height: 130px;
+    resize: none;
 }
+
+.houyi-box label{
+    font-weight: normal;}
+
+.houyi-box .control-label{}
+.input-group-addon{cursor: pointer;}
